@@ -1,4 +1,6 @@
 @import url("zero.css");
+
+/* Общий документ */
 body{
     font-family: Montserrat;
 }
@@ -11,6 +13,8 @@ body{
 .content {
     flex: 1 1 auto;
 }
+
+/* Первый фрейм */
 .high {
     background-color: #8D5CF6;
     height: 825px;
@@ -57,8 +61,6 @@ body{
     line-height: 32px;
     color:#FFFFFF;
     margin-right: 45px;
-}
-.high-sidebar-join {
 }
 .high-sidebar-join-button{
     padding: 15px 0px;
@@ -122,6 +124,8 @@ body{
     line-height: 22px;
     color: #FFFFFF;
 }
+
+/* Фрейм подвала */
 .footer {
     padding: 25px 0px;
     background-color: #FAFAFA;
@@ -146,4 +150,92 @@ body{
 }
 a:last-child {
     margin-right: 0;
+}
+
+/* Второй фрейм */
+.our {
+    background: #26335D; 
+    height: 768px;   /* Высота мне тут тоже не нравится, может если поставить 100% он начнет растягиваться и допускать wrap блоков*/
+}
+.our-column {
+    display: flex;
+    flex-direction: column;
+    max-width: 1050px;
+    margin: 0px auto;
+}
+.our-text-column {
+    margin-top: 112px;
+    height: 134px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.our-text-practice {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8D5CF6;
+    letter-spacing: 0.2px;
+}
+.our-text-our {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+.our-text-problems {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0.2px;
+}
+.our-info-row {
+    margin-top: 70px;
+    height: 340px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.our-info{
+    min-width: 200px;  /* не понимаю пока с широтами и высотами, как-то туговато */
+    background: #FFFFFF;
+    padding-top: 35px;
+    padding-left: 40px;
+    margin-right: 40px;    /* Не нравится мне тут марджинка:((, а контент не работает */
+}
+.our-info div:last-child{
+    margin: 0;
+}
+.books {
+    margin-bottom: 48px;   /* Можно реализовать через align-self, хотя все равно скорее всего придется использовать margin, посоветоваться */
+    
+}
+.certified {
+    margin-top: 48px;     /* Можно реализовать через align-self */
+}
+.training {
+    background: #8D5CF6;
+    margin-bottom: 48px;  /* Можно реализовать через align-self */
+}
+.online {
+    margin-top: 48px;     /* Можно реализовать через align-self */
+}
+.our-info-heading {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+.our-info-text {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+.an-color{
+    color: #FFFFFF;
 }
