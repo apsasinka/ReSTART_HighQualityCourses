@@ -67,7 +67,7 @@ body{
     padding-right: 25px;
     width: 137px;
     height: 52px;
-    background: url(/images/arrow.png) 100px 21px no-repeat;
+    background: url(../images/arrow.png) 100px 21px no-repeat;
     background-color: #FF7B52;
     border-radius: 5px;
     font-weight: bold;
@@ -275,7 +275,7 @@ a:last-child {
 }
 .get-choise-object-picture {
     height: 300px;
-    background-image: url("/images/books.png");
+    background-image: url("../images/books.png");
     display: flex;
     flex-direction: column;
 }
@@ -354,7 +354,7 @@ a:last-child {
     border: 1px solid #8D5CF6;
     border-radius: 37px;
     height: 30px;
-    background: url(/images/arrow3frame.png) 120px 18px no-repeat;
+    background: url(../images/arrow3frame.png) 120px 18px no-repeat;
 }
 .get-choise-object-text-button-text {
     font-weight: bold;
@@ -366,19 +366,19 @@ a:last-child {
 }
 .get-choise-object-picture-3 {
     height: 300px;
-    background-image: url("/images/pen.png");
+    background-image: url("../images/pen.png");
     display: flex;
     flex-direction: column;
 }
 .get-choise-object-picture-4 {
     height: 300px;
-    background-image: url("/images/work.png");
+    background-image: url("../images/work.png");
     display: flex;
     flex-direction: column;
 }
 .get-choise-object-picture-2 {
     height: 300px;
-    background-image: url("/images/school.png");
+    background-image: url("../images/school.png");
     display: flex;
     flex-direction: column;
 }
