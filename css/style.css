@@ -162,6 +162,7 @@ a:last-child {
     flex-direction: column;
     max-width: 1050px;
     margin: 0px auto;
+    overflow: hidden;
 }
 .our-text-column {
     margin-top: 112px;
@@ -199,7 +200,7 @@ a:last-child {
     justify-content: space-around;
 }
 .our-info{
-    min-width: 200px;  /* не понимаю пока с широтами и высотами, как-то туговато */
+    min-width: 190px;  /* не понимаю пока с широтами и высотами, как-то туговато */
     background: #FFFFFF;
     padding-top: 35px;
     padding-left: 40px;
@@ -228,6 +229,7 @@ a:last-child {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.1px;
+    color: #252B42;
 }
 .our-info-text {
     margin-top: 10px;
@@ -235,7 +237,148 @@ a:last-child {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
+    color: #737373;
 }
 .an-color{
     color: #FFFFFF;
+}
+/* Третий фрейм */
+.get {
+    background: #26335D; 
+    height: 1096px;
+}
+.get-column {
+    display: flex;
+    flex-direction: column;
+    max-width: 1050px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.get-text-column {
+    margin-top: 112px;
+    height: 134px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.get-choise-row {
+    margin-top: 70px;
+    height: 602px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.get-choise-object-column {
+    min-width: 238px;
+    background: #FFFFFF;
+    margin-right: 30px;
+}
+.get-choise-object-picture {
+    height: 300px;
+    background-image: url("/images/books.png");
+    display: flex;
+    flex-direction: column;
+}
+.get-choise-object-picture-sale {
+    margin: 20px 20px;
+    border-radius: 3px;
+    max-width: 51px;
+}
+.get-choise-object-picture-actions {
+    margin-top: 172px;
+    display: flex;
+    flex-direction: row;
+    width: 140px;
+    justify-content: space-between;
+    margin-left: 49px;
+}
+.get-choise-object-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 25px;
+    height: 253px;
+}
+.get-choise-object-text-welcome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 182px;
+}
+.get-choise-object-text-books {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+.get-choise-object-text-me {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+.get-choise-object-text-sales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 83px;
+}
+.get-choise-object-text-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 108px;
+}
+.get-choise-object-text-price-old {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #BDBDBD;
+}
+.get-choise-object-text-price-new {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #FF7B52;
+}
+.get-choise-object-text-button {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    padding-left: 20px;
+    width: 141.14px;
+    border: 1px solid #8D5CF6;
+    border-radius: 37px;
+    height: 30px;
+    background: url(/images/arrow3frame.png) 120px 18px no-repeat;
+}
+.get-choise-object-text-button-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8D5CF6;
+    letter-spacing: 0.2px;
+    background-color: #FFFFFF;
+}
+.get-choise-object-picture-3 {
+    height: 300px;
+    background-image: url("/images/pen.png");
+    display: flex;
+    flex-direction: column;
+}
+.get-choise-object-picture-4 {
+    height: 300px;
+    background-image: url("/images/work.png");
+    display: flex;
+    flex-direction: column;
+}
+.get-choise-object-picture-2 {
+    height: 300px;
+    background-image: url("/images/school.png");
+    display: flex;
+    flex-direction: column;
 }
