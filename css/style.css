@@ -382,3 +382,49 @@ a:last-child {
     display: flex;
     flex-direction: column;
 }
+
+/* Четвертый фрейм */
+.girl {
+    height: 805px;
+    background: #26335D;
+}
+.girl-row {
+    max-width: 1050px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.girl-text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 296px;
+}
+.girl-text-img{
+    width: 94px;
+}
+.girl-text-heading {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+.girl-text-text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+.girl-text-button {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #8D5CF6;
+    width: 120px;
+    margin-left: -17px;
+    background: url(../images/arrow3frame.png) 110px no-repeat;
+}
