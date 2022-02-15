@@ -428,3 +428,28 @@ a:last-child {
     margin-left: -17px;
     background: url(../images/arrow3frame.png) 110px no-repeat;
 }
+
+/* Пятый фрейм */
+.every {
+    height: 676px;
+    background: #26335D;
+}
+.every-row {
+    max-width: 1050px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px auto;
+    overflow: hidden;
+    align-items: center;
+}
+.every-text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 296px;
+}
+.every-video {
+    max-width: 508px;
+    max-height: 363px;
+}
