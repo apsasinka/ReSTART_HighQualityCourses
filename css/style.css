@@ -453,3 +453,55 @@ a:last-child {
     max-width: 508px;
     max-height: 363px;
 }
+
+/* Шестой фрейм */
+.most {
+    background: #26335D;
+    height: 989px;
+}
+.most-column {
+    display: flex;
+    flex-direction: column;  /* Только на шестом фрейме я поняла, что марджинки между двумя основными блоками можно заменить justify-content: space-around. Можно реализовать позже, так как для сокращения ксс классы у меня связаны */
+    max-width: 1050px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.most-recom-row {
+    margin-top: 96px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.most-recom-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 508px;
+    background: #FFFFFF;
+    height: 378px;
+    align-items: center;
+}
+.most-recom-img{
+    border-radius: 200px;
+}
+.most-recom-text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    text-align: center;
+}
+.most-recom-name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+.most-recom-prof {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
