@@ -505,3 +505,50 @@ a:last-child {
     letter-spacing: 0.2px;
     color: #737373;
 }
+
+/* Седьмой фрейм */
+.teacher {
+    background: #26335D;
+    height: 849px;
+}
+.teacher-column {
+    display: flex;
+    flex-direction: column;
+    max-width: 1050px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.teacher-descriprion-row {
+    height: 375px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 112px;
+}
+.teacher-description-column {
+    display: flex;
+    height: 375px;
+    width: 238px;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #FFFFFF;
+}
+.teacher-description-img {
+    background-image: url(../images/teacher-1.png);
+    height: 231px;
+    border-radius: 20px;
+}
+.teacher-description-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 144px;
+    align-items: center;
+}
+.teacher-description-text-social-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 112px;
+    margin-bottom: 15px;
+}
