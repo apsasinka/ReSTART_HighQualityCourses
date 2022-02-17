@@ -127,8 +127,34 @@ body{
 
 /* Фрейм подвала */
 .footer {
-    padding: 25px 0px;
-    background-color: #FAFAFA;
+}
+.footer-info {
+    height: 272px;
+    background: #26335D;
+}
+.fotter-info-row {
+    width: 1050px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+.footer-info-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 170px;
+}
+.footer-info-text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+.footer-info-text-img{
+    margin-right: 10px;
 }
 .footer-row {
     margin: 0px auto;
@@ -136,6 +162,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 25px 0px;
+    background-color: #FAFAFA;
 }
 .footer-text{
     color: #737373;
@@ -395,6 +423,7 @@ a:last-child {
     justify-content: space-between;
     margin: 0px auto;
     overflow: hidden;
+    padding-top: 160px;
 }
 .girl-text-column {
     display: flex;
@@ -442,6 +471,7 @@ a:last-child {
     margin: 0px auto;
     overflow: hidden;
     align-items: center;
+    padding-top: 160px;
 }
 .every-text-column {
     display: flex;
@@ -533,7 +563,7 @@ a:last-child {
     border-radius: 20px;
     background: #FFFFFF;
 }
-.teacher-description-img {
+.teacher-description-img-1 {
     background-image: url(../images/teacher-1.png);
     height: 231px;
     border-radius: 20px;
@@ -550,5 +580,73 @@ a:last-child {
     flex-direction: row;
     justify-content: space-between;
     width: 112px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+.teacher-description-img-2 {
+    background-image: url(../images/teacher-2.png);
+    height: 231px;
+    border-radius: 20px;
+}
+.teacher-description-img-3 {
+    background-image: url(../images/teacher-3.png);
+    height: 231px;
+    border-radius: 20px;
+}
+.teacher-description-img-4 {
+    background-image: url(../images/teacher-4.png);
+    height: 231px;
+    border-radius: 20px;
+}
+.margin{
+    margin-left: 8px;
+}
+
+/* Восьмой фрейм */
+.newsletter {
+    height: 594px;
+    background: #26335D;
+}
+.newsletter-column {
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    overflow: hidden;
+    align-items: center;
+}
+.newsletter-text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 134px;
+    padding-top: 160px;
+    text-align: center;
+}
+.newsletter-email-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 80px;
+    width: 688px;
+    height: 58px;
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+.newsletter-email-addres {
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    width: 571px;
+    height: 57px;
+}
+.newsletter-email-button {
+    background: #8D5CF6;
+    border: 1px solid #E6E6E6;
+    width: 117px;
+    height: 58px;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
 }
