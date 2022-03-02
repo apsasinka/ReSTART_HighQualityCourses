@@ -3,6 +3,7 @@
 /* Общий документ */
 body{
     font-family: Montserrat;
+    height: 100%;
 }
 .wrapper {
     min-height: 100%;
@@ -24,6 +25,7 @@ body{
     margin: 0px auto;
     display: flex;
     flex-direction: column;
+    padding: 0px 7px;
 }
 .high-sidebar-row {
     display: flex;
@@ -116,8 +118,8 @@ body{
 .high-text-button-2{
     border: 1px solid #FF7B52;
     border-radius: 5px;
-    width: 162px;
     height: 52px;
+    padding: 15px 40px;
     background:  #8D5CF6;
     font-weight: bold;
     font-size: 14px;
@@ -125,26 +127,73 @@ body{
     color: #FFFFFF;
 }
 
+/* Медиа первого фрейма */
+@media (max-width: 948px){
+    .high-sidebar-menu{
+        margin-right: 20px;
+    }
+    .high-sidebar-brand{
+        padding-right: 10px;
+    }
+    .high-text-column{
+        height: 420px;
+    }
+}
+@media (max-width: 710px){
+    .high-sidebar-row{
+        flex-direction: column;
+        height: 150px;
+    }
+    .high-text-column{
+        margin-top: 130px;
+    }
+}
+@media (max-width: 452px){
+    .high-text-column{
+        margin-top: 70px;
+        height: 500px;
+    }
+    .high-text-button{
+        flex-direction: column;
+        height: 150px;
+        justify-content: space-around;
+    }
+    .high-text-button-1{
+        margin-right: 0;
+    }
+}
+@media (max-width: 325px){
+    .high-sidebar-menu{
+        margin-right: 0px;
+    }
+    .high-text-column{
+        height: 550px;
+    }
+}
+
 /* Фрейм подвала */
 .footer {
 }
 .footer-info {
-    height: 272px;
+    height: 100%;
     background: #26335D;
 }
 .fotter-info-row {
-    width: 1050px;
+    width: 98%;
     margin: 0px auto;
     display: flex;
     flex-direction: row;
-    padding-top: 50px;
+    padding: 50px 10px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer-info-column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 170px;
+    margin-right: 8px;
+    margin-top: 30px;
 }
 .footer-info-text {
     font-weight: bold;
@@ -162,8 +211,9 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 25px 0px;
+    padding: 25px 10px;
     background-color: #FAFAFA;
+    flex-wrap: wrap;
 }
 .footer-text{
     color: #737373;
@@ -174,10 +224,18 @@ body{
 }
 .footer-button-links {
     margin-right: 22px;
-    
 }
 a:last-child {
     margin-right: 0;
+}
+/* Медиа подвала */
+@media (max-width: 515px){
+    .footer-row {
+        justify-content: center;
+    }
+    .footer-button-row{
+        margin-top: 15px;
+    }
 }
 
 /* Второй фрейм */
@@ -191,6 +249,7 @@ a:last-child {
     max-width: 1100px;
     margin: 0px auto;
     overflow: hidden;
+    padding: 0px 10px;
 }
 .our-text-column {
     margin-top: 112px;
@@ -227,12 +286,18 @@ a:last-child {
     flex-direction: row;
     justify-content: space-around;
 }
+.our-info-row-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 525px;
+}
 .our-info{
     min-width: 190px;  /* не понимаю пока с широтами и высотами, как-то туговато */
     background: #FFFFFF;
     padding-top: 35px;
     padding-left: 40px;
-    margin-right: 40px;    /* Не нравится мне тут марджинка:((, а контент не работает */
+    margin-right: 10px;    /* Не нравится мне тут марджинка:((, а контент не работает */
 }
 .our-info div:last-child{
     margin: 0;
@@ -267,13 +332,66 @@ a:last-child {
     letter-spacing: 0.2px;
     color: #737373;
 }
+.margin{
+    margin-left: 8px;
+}
 .an-color{
     color: #FFFFFF;
 }
+/* Медиа второго фрейма */
+@media (max-width: 1005px){
+    .our-info-row{
+        flex-direction: column;
+        margin-top: 40px;
+        height: 800px;
+        align-items: center;
+    }
+    .our{
+        height: 1100px;
+    }
+    .our-info{
+        /* margin-bottom: 0; */
+    }
+    .margin{
+        margin-left: 0;
+    }
+    .certified{
+        /* margin-top: 0; */
+    }
+    .our-info-row-div{
+        height: 350px;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+@media (max-width: 576px){
+    .our-info-row-div{
+        flex-direction: column;
+        height: 640px;
+        align-items: center;
+    }
+    .our{
+        height: 1600px;
+    }
+    .our-text-column{
+        height: 200px;
+    }
+    .our-info-row{
+        height: 1340px;
+        justify-content: space-around;
+        margin-top: 0;
+    }
+    .our-info{
+        height: 270px;
+        width: 200px;
+        margin: 0;
+    }
+}
+
 /* Третий фрейм */
 .get {
     background: #26335D; 
-    height: 1096px;
+    height: 100%;
 }
 .get-column {
     display: flex;
@@ -281,9 +399,9 @@ a:last-child {
     max-width: 1100px;
     margin: 0px auto;
     overflow: hidden;
+    padding: 112px 10px;
 }
 .get-text-column {
-    margin-top: 112px;
     height: 134px;
     display: flex;
     flex-direction: column;
@@ -299,7 +417,7 @@ a:last-child {
 .get-choise-object-column {
     min-width: 238px;
     background: #FFFFFF;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 .get-choise-object-picture {
     height: 300px;
@@ -412,10 +530,40 @@ a:last-child {
     display: flex;
     flex-direction: column;
 }
+.get-choise-column-div {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+}
+/* Медиа третий фрейм */
+@media (max-width: 1030px){
+    .get-choise-column-div {
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+    }
+    .get-choise-row{
+        height: 100%;
+    }
+    .get{
+        height: 100%;
+    }
+    .get-choise-object-column{
+        margin-top: 10px;
+        width: 45%;
+    }
+}
+@media (max-width: 525px){
+    .get-choise-row{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 /* Четвертый фрейм */
 .girl {
-    height: 805px;
+    height: 100%;
     background: #26335D;
 }
 .girl-row {
@@ -425,13 +573,14 @@ a:last-child {
     justify-content: space-between;
     margin: 0px auto;
     overflow: hidden;
-    padding-top: 160px;
+    align-items: center;
+    padding: 100px 10px;
 }
 .girl-text-column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 296px;
+    height: 296px;
 }
 .girl-text-img{
     width: 94px;
@@ -459,10 +608,16 @@ a:last-child {
     margin-left: -17px;
     background: url(../images/arrow3frame.png) 110px no-repeat;
 }
+/* Медиа четвертого фрейма */
+@media (max-width: 888px){
+    .girl-row{
+        flex-direction: column-reverse;
+    }
+}
 
 /* Пятый фрейм */
 .every {
-    height: 676px;
+    height: 100%;
     background: #26335D;
 }
 .every-row {
@@ -473,7 +628,7 @@ a:last-child {
     margin: 0px auto;
     overflow: hidden;
     align-items: center;
-    padding-top: 160px;
+    padding: 100px 10px;
 }
 .every-text-column {
     display: flex;
@@ -485,11 +640,23 @@ a:last-child {
     max-width: 508px;
     max-height: 363px;
 }
+/* Медиа пятого фрейма */
+@media (max-width: 888px){
+    .every-row{
+        flex-direction: column;
+    }
+    .every-text-column{
+        margin-bottom: 30px;
+    }
+    .every-video{
+        width: calc(100% - 10px);
+    }
+}
 
 /* Шестой фрейм */
 .most {
     background: #26335D;
-    height: 989px;
+    height: 100%;
 }
 .most-column {
     display: flex;
@@ -497,6 +664,7 @@ a:last-child {
     max-width: 1050px;
     margin: 0px auto;
     overflow: hidden;
+    padding: 112px 10px;
 }
 .most-recom-row {
     margin-top: 96px;
@@ -508,7 +676,7 @@ a:last-child {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 508px;
+    width: 49%;
     background: #FFFFFF;
     height: 378px;
     align-items: center;
@@ -537,11 +705,25 @@ a:last-child {
     letter-spacing: 0.2px;
     color: #737373;
 }
+/* Медиа шестой фрейм */
+@media (max-width: 768px){
+    .most-recom-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .most-recom-row div:last-child{
+        margin-top: 10px;
+    }
+    .most-recom-column{
+        width: 75%;
+        padding: 0px 10px;
+    }
+}
 
 /* Седьмой фрейм */
 .teacher {
     background: #26335D;
-    height: 849px;
+    height: 100%;
 }
 .teacher-column {
     display: flex;
@@ -549,13 +731,20 @@ a:last-child {
     max-width: 1050px;
     margin: 0px auto;
     overflow: hidden;
+    padding: 112px 10px;
 }
 .teacher-descriprion-row {
-    height: 375px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 112px;
+    margin-top: 40px;
+}
+.teacher-description-column-div {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
 }
 .teacher-description-column {
     display: flex;
@@ -599,29 +788,51 @@ a:last-child {
     height: 231px;
     border-radius: 20px;
 }
-.margin{
-    margin-left: 8px;
+/* Медиа седьмого фрейма */
+@media (max-width: 1000px){
+    .teacher-descriprion-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .teacher-description-column{
+        margin-top: 15px;
+    }
+    .teacher-description-column-div{
+        width: 80%;
+    }
+    .margin{
+        margin-left: 8px;
+    }
 }
-
+@media (max-width: 584px){
+    .teacher-description-column-div{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .margin{
+        margin-left: 0px;
+    }
+}
 /* Восьмой фрейм */
 .newsletter {
-    height: 594px;
-    background: #26335D;
+    height: 100%;
+    background-color: #26335D;
 }
 .newsletter-column {
-    width: 1050px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 0px auto;
     overflow: hidden;
     align-items: center;
+    padding: 100px 20px;
 }
 .newsletter-text-column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 134px;
-    padding-top: 160px;
     text-align: center;
 }
 .newsletter-email-row {
@@ -629,7 +840,7 @@ a:last-child {
     flex-direction: row;
     align-items: center;
     margin-top: 80px;
-    width: 688px;
+    width: calc(100% - 420px);
     height: 58px;
     background: #F9F9F9;
     border: 1px solid #E6E6E6;
@@ -639,8 +850,9 @@ a:last-child {
     background: #F9F9F9;
     border: 1px solid #E6E6E6;
     border-radius: 5px;
-    width: 571px;
+    width: 100%;
     height: 57px;
+    align-items: center;
 }
 .newsletter-email-button {
     background: #8D5CF6;
@@ -651,4 +863,11 @@ a:last-child {
     line-height: 28px;
     letter-spacing: 0.2px;
     color: #FFFFFF;
+    padding: 0px 10px;
+}
+/* Медиа восьмого фрейма */
+@media (max-width: 681px){
+    .newsletter-email-row{
+        width: calc(100% - 57px)
+    }
 }
