@@ -871,3 +871,8 @@ a:last-child {
         width: calc(100% - 57px)
     }
 }
+@media (min-width: 1000px){
+    .newsletter-email-row{
+        width: 570px;
+    }
+}
